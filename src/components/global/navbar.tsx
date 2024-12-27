@@ -3,60 +3,50 @@ import Link from 'next/link'
 import React from 'react'
 import { MenuIcon } from 'lucide-react'
 import { UserButton, currentUser } from '@clerk/nextjs'
+import { Zap } from "lucide-react";
 
 type Props = {}
 
 const Navbar = async (props: Props) => {
   const user = await currentUser()
   return (
-    <header className="fixed right-0 left-0 top-0 py-4 px-4 bg-black/40 backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900 justify-between">
-      <aside className="flex items-center gap-[2px]">
-        <p className="text-3xl font-bold">Fu</p>
-        <Image
-          src="/fuzzieLogo.png"
-          width={15}
-          height={15}
-          alt="fuzzie logo"
-          className="shadow-sm"
-        />
-        <p className="text-3xl font-bold">zie</p>
-      </aside>
-      <nav className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%] hidden md:block">
-        <ul className="flex items-center gap-4 list-none">
-          <li>
-            <Link href="#">Products</Link>
-          </li>
-          <li>
-            <Link href="#">Pricing</Link>
-          </li>
-          <li>
-            <Link href="#">Clients</Link>
-          </li>
-          <li>
-            <Link href="#">Resources</Link>
-          </li>
-          <li>
-            <Link href="#">Documentation</Link>
-          </li>
-          <li>
-            <Link href="#">Enterprise</Link>
-          </li>
-        </ul>
-      </nav>
-      <aside className="flex items-center gap-4">
-        <Link
-          href="/dashboard"
-          className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-        >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-            {user ? 'Dashboard' : 'Get Started'}
-          </span>
-        </Link>
-        {user ? <UserButton afterSignOutUrl="/" /> : null}
-        <MenuIcon className="md:hidden" />
-      </aside>
-    </header>
+    <nav className="bg-[#F5F4F6] relative    w-full  rounded-[20px]">
+    <div className=" px-5  ">
+      <div className="flex justify-between items-center relative  w-full px-[70px] py-[16px] rounded-[20px]">
+
+      <div className="hidden sm:flex items-center space-x-8">
+          <Link href="#" className="transition-all duration-200 text-[18px] leading-[24px] font-medium text-[hsla(0,0%,9%,.3)]">
+            About
+          </Link>
+          <Link href="#" className="transition-all duration-200 text-[18px] leading-[24px] font-medium text-[hsla(0,0%,9%,.3)]">
+            Blog
+          </Link>
+          <Link href="#" className="transition-all duration-200 text-[18px] leading-[24px] font-medium text-[hsla(0,0%,9%,.3)]">
+            Careers
+          </Link>
+
+        </div>
+         
+
+
+        <div className="flex items-center">
+          <Zap className="h-8 w-8 text-[#82e600]" />
+          <span className="ml-2 text-xl font-semibold text-gray-900">foodyman</span>
+        </div>
+
+
+
+
+        <div>
+        <button className="px-[24px] py-[14px] rounded-full text-[18px] leading-[20px] font-medium text-[black] border border-[black] bg-transparent outline-none cursor-pointer">
+            Login
+          </button>
+        </div>
+        
+
+      </div>
+    </div>
+  </nav>
   )
 }
 
