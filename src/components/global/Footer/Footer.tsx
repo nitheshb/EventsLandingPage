@@ -7,7 +7,7 @@ import FooterLinks from "./FooterLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1c1c1c] text-white py-12">
+    <footer className="bg-[#171717]  rounded-[20px] text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col space-y-8">
           {/* Top section */}

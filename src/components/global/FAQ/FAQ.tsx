@@ -25,16 +25,20 @@ const faqData = [
   }
 ];
 
+
 export default function FAQ() {
   return (
-    <div className="py-16">
-      <h2 className="text-2xl font-bold mb-8">Frequently asked questions</h2>
-      <div className="space-y-2">
+    <div className="py-16 px-16 mt-4 rounded-[20px] mb-4 bg-[#f5f4f6]">
+      <h2 className="mb-6 text-[42px] leading-[42px] font-medium text-[#000]">
+        Frequently asked questions
+      </h2>
+      <div className="border-2 border-[#e9e9e9] rounded-[20px] ">
         {faqData.map((item, index) => (
           <FAQItem
             key={index}
             question={item.question}
             answer={item.answer}
+            isFirst={index === 0}
           />
         ))}
       </div>
