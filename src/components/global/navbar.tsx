@@ -16,13 +16,13 @@ const Navbar = async (props: Props) => {
 
       <div className="hidden sm:flex items-center space-x-8">
           <Link href="#" className="transition-all duration-200 text-[18px] leading-[24px] font-medium text-[hsla(0,0%,9%,.3)]">
-            About
+            Home
           </Link>
           <Link href="#" className="transition-all duration-200 text-[18px] leading-[24px] font-medium text-[hsla(0,0%,9%,.3)]">
-            Blog
+            Event
           </Link>
           <Link href="#" className="transition-all duration-200 text-[18px] leading-[24px] font-medium text-[hsla(0,0%,9%,.3)]">
-            Careers
+          Ticket
           </Link>
 
         </div>

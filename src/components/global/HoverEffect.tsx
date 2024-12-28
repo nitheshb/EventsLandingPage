@@ -14,7 +14,7 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    imageSrc: string; // Image source prop
+    imageSrc: string; 
   }[];
   className?: string;
 }) => {
@@ -23,7 +23,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10", // Added gap-6 for spacing
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10", 
         className
       )}
     >
@@ -66,9 +66,9 @@ export const HoverEffect = ({
             <div className="relative h-48 w-full rounded-xl overflow-hidden">
               <Image
                 src={item.imageSrc}
-                alt={item.title} // Fix the alt text here
+                alt={item.title} 
                 fill
-                className="object-cover"
+                className="object-cover  transition-all duration-300 group-hover:filter-none filter grayscale"
               />
             </div>
           </Card>

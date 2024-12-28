@@ -1,5 +1,6 @@
 import { CardBody, CardContainer, CardItem } from '@/components/global/3d-card'
 import { AnimatedTestimonialsDemo } from '@/components/global/AnimatedTestimonialsDemo'
+import { CardSpotlight } from '@/components/global/CardSpotlight'
 import { HeroParallax } from '@/components/global/connect-parallax'
 import { ContainerScroll } from '@/components/global/container-scroll-animation'
 import CreativeBtn from '@/components/global/CreativeBtn'
@@ -11,7 +12,7 @@ import HowItWorks from '@/components/global/HowItWorks/HowItWorks'
 import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
 import { LampComponent } from '@/components/global/lamp'
 import Navbar from '@/components/global/navbar'
-import QRMenuLandingu from '@/components/global/QRMenuLandingu'
+import Pricing from '@/components/global/Pricing'
 import QRSection from '@/components/global/QRSection'
 import TableReservation from '@/components/global/TableReservation'
 import { Button } from '@/components/ui/button'
@@ -57,6 +58,13 @@ export default function Home() {
         <TableReservation />
 
         {/* <HoverEffect/> */}
+
+       
+
+        <Pricing/>
+
+        {/* <CardSpotlight/> */}
+
 
 
         <DownloadApp />

@@ -161,11 +161,7 @@ export default function QRSection() {
 
 
   <div className="relative bg-gray-50 rounded-3xl p-8 pb-32">
-
-
-
   <div className="absolute right-[30%] bottom-0 w-3/4 h-3/4">
-
 <Image
 src={welcomeherovector}
 alt="Decorative background"
@@ -174,11 +170,11 @@ className="w-full h-full object-cover"
 </div>
     <div className="flex flex-col  md:flex-row justify-between items-start">
 
-      <div className="max-w-[500px]">
+      <div className="max-w-[550px] z-10">
         <h1 className=" text-[#121212]  leading-[1.2] text-[76px] font-extrabold mb-3 ">
           Contact-less<br />QR Menu
         </h1>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600  text-[20px] leading-[24px] tracking-[-4%] font-medium mb-[68px] text-[hsla(0,0%,9%,.5)]">
           Eventkit allows attendees to browse stall options and book their favorite through a user friendly interface
         </p>
         {/* <button className="px-8 py-2 rounded-full bg-white text-[#121212] border-2 border-black hover:bg-black hover:text-white transition-colors">
@@ -278,11 +274,11 @@ className="w-full h-full object-cover"
   </div>
 
 
-  <div className="absolute left-[68%] bg-[#171717] transform -translate-x-[70%] -translate-y-[70%] z-10">
+  <div className="absolute left-[68%] bg-[#171717] transform -translate-x-[80%] -translate-y-[80%] ">
 
 <div className="relative bg-black h-[500px] w-full">
 
-  <div className="absolute -z-10 w-[340px] h-[420px] p-4 bg-[#82e600] rounded-full">
+  <div className="absolute -z-10 w-[320px] h-[480px] p-4 bg-[#82e600] rounded-full">
     <Image
       src={scanqr}
       alt="Reservation Line"

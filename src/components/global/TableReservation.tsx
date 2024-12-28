@@ -64,8 +64,8 @@ export default function TableReservation() {
               <Image
                 src={reservationline}
                 alt="Reservation Line"
-                width={280}
-                height={300}
+                width={248}
+                height={100}
                 className="absolute top-0 right-0  object-contain z-0"
               />
               <div className="relative z-10 p-8">

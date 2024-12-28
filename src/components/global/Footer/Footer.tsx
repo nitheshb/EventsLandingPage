@@ -37,13 +37,13 @@ export default function Footer() {
                 href="#" 
                 className="px-4 py-2 border border-white/20 rounded-full text-sm hover:bg-white/10 transition-colors"
               >
-                Careers
+                Ticket
               </Link>
               <Link 
                 href="#" 
                 className="px-4 py-2 border border-white/20 rounded-full text-sm hover:bg-white/10 transition-colors"
               >
-                Add your restaurant
+                Add your Event
               </Link>
               <Link 
                 href="#" 
