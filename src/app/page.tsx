@@ -1,9 +1,12 @@
 import { CardBody, CardContainer, CardItem } from '@/components/global/3d-card'
+import { AnimatedTestimonialsDemo } from '@/components/global/AnimatedTestimonialsDemo'
 import { HeroParallax } from '@/components/global/connect-parallax'
 import { ContainerScroll } from '@/components/global/container-scroll-animation'
+import CreativeBtn from '@/components/global/CreativeBtn'
 import DownloadApp from '@/components/global/DownloadApp'
 import FAQ from '@/components/global/FAQ/FAQ'
 import Footer from '@/components/global/Footer/Footer'
+import { HoverEffect } from '@/components/global/HoverEffect'
 import HowItWorks from '@/components/global/HowItWorks/HowItWorks'
 import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
 import { LampComponent } from '@/components/global/lamp'
@@ -16,6 +19,10 @@ import { clients, products } from '@/lib/constant'
 import { CheckIcon } from 'lucide-react'
 import Image from 'next/image'
 
+
+
+
+
 export default function Home() {
   //WIP: remove fault IMAge for home page
   return (
@@ -25,7 +32,7 @@ export default function Home() {
       <div className='relative w-full max-w-[1440px] px-[50px] pt-[10px] mx-auto'>
       <Navbar />
       {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16"> */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1440px] mx-auto">
         {/* <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-6xl font-bold text-gray-600 tracking-tight">
@@ -48,10 +55,21 @@ export default function Home() {
 
       
         <TableReservation />
+
+        {/* <HoverEffect/> */}
+
+
         <DownloadApp />
+         
+
+         {/* <CreativeBtn/> */}
+
+         <AnimatedTestimonialsDemo/>
+
         <FAQ />
       </div>
       <Footer />
+
 
       {/* <QRMenuLandingu/> */}
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { HoverEffect } from "../HoverEffect";
 import FeatureCard from "./FeatureCard";
 
 export default function HowItWorks() {
@@ -26,11 +27,16 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold mb-12">How does it work?</h2>
         
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        {/* <div className="grid md:grid-cols-3 gap-6 mb-12">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
-        </div>
+        </div> */}
+
+
+
+
+         <HoverEffect items={features} className="mb-12" /> 
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <h3 className="text-[#82e600] text-2xl font-semibold max-w-md">
@@ -48,6 +54,11 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 }
+
+
+

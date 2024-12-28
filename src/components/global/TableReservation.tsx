@@ -15,8 +15,8 @@ export default function TableReservation() {
 
     <div>
 
-<div className="w-full max-w-7xl mx-auto py-4 rounded-[20px] ">
-    <div className="grid md:grid-cols-2 gap-6 items-start">
+<div className="w-full max-w-[1440px] mx-auto py-4 rounded-[20px] ">
+    <div className="grid md:grid-cols-2 gap-4 items-start">
 <div className="relative h-[480px] w-full overflow-hidden">
   <Image
     src={reservation} 
@@ -28,12 +28,12 @@ export default function TableReservation() {
 </div>
   
 
-      <div className="flex flex-col space-y-6">
+      <div className="flex flex-col ">
       
 
  
 
-          <div className="bg-[#83ea00]  p-8 text-[#171717] relative   rounded-[20px] py-[50px] px-[50px] pb-[57px]  mb-[10px]">
+          <div className="bg-[#83ea00]  p-8 text-[#171717] relative   rounded-[20px] py-[50px] px-[50px] pb-[57px]  mb-4">
   <p className="text-2xl mb-2">Advantages</p>
   <h2 className="text-[56px] font-bold leading-tight mb-4">
     Online<br />
@@ -73,9 +73,18 @@ export default function TableReservation() {
                 <h3 className="text-3xl font-bold mb-4 text-[#171717]">
                   Find your table for any occasion
                 </h3>
-                <button className="mt-4 px-8 py-3 border-2   border-black rounded-full hover:bg-black text-[#171717] transition-colors duration-300 text-lg">
+                {/* <button className="mt-4 px-8 py-3 border-2   border-black rounded-full hover:bg-black text-[#171717] transition-colors duration-300 text-lg">
                   Explore more
-                </button>
+                </button> */}
+
+<div className='group relative cursor-pointer p-2 w-[150px] border border-black bg-transparent rounded-full overflow-hidden text-black text-center font-semibold'>
+        <span className='translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block'>
+        Explore more
+        </span>
+        <div className='flex gap-2 text-white bg-green-400 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none '>
+          <span> Explore more</span>
+        </div>
+      </div>
               </div>
             </div>
           </div>

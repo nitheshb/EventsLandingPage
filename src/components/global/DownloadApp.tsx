@@ -95,7 +95,7 @@ export default function DownloadApp() {
   // </div>
 
 
-  <div className="w-full max-w-7xl mx-auto">
+  <div className="w-full max-w-[1440px] mx-auto">
   <div className="grid grid-cols-6 gap-2">
   
   <div className="col-span-2 bg-[#83ea00] rounded-l-2xl p-8 relative flex flex-col justify-between min-h-[340px]">
@@ -104,19 +104,9 @@ export default function DownloadApp() {
   </h2>
   <div className="absolute top-8 right-8">
     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 8l4 4m0 0l-4 4m4-4H3"
-        />
-      </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none"><path d="M26.2789 17.8748L17.5624 9.15832L19.8604 6.86023L32.5 19.4998L19.8604 32.1392L17.5624 29.8412L26.2789 21.1248H6.5V17.8748H26.2789Z" fill="#171717"></path></svg>
+
     </div>
   </div>
 </div>

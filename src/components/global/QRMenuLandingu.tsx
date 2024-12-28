@@ -1,8 +1,13 @@
 import React from 'react';
+import { HoverEffect } from './HoverEffect';
+
+
 
 const QRMenuLandingu = () => {
   return (
     <div className="min-h-screen bg-white p-8">
+
+
       {/* Hero Section */}
       <div className="relative max-w-5xl mx-auto mb-12">
         <div className="flex flex-col md:flex-row justify-between items-center">

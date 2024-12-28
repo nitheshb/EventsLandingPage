@@ -28,7 +28,15 @@ export default function FAQItem({ question, answer, isFirst }: FAQItemProps) {
         }`}
       />
     </button>
-    {isOpen && <div className="mt-2 text-gray-600">{answer}</div>}
+    {/* {isOpen && <div className="mt-2 text-gray-600  px-20">{answer}</div>} */}
+    <div
+  className={`mt-2 text-gray-600 px-20 transition-all duration-1000 ease-out-in overflow-hidden ${
+    isOpen ? "opacity-100 max-h-screen" : "opacity-0 max-h-0"
+  }`}
+>
+  {answer}
+</div>
+
   </div>
   );
 }

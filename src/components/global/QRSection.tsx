@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { QrCode } from "lucide-react";
+import { ArrowRight, QrCode } from "lucide-react";
 import HowItWorks from "./HowItWorks/HowItWorks";
 
 import scanqr from '../../../public/scanqr.png'
@@ -149,7 +149,7 @@ export default function QRSection() {
 
 
 
-<div className="w-full max-w-7xl mx-auto mt-[10px] relative">
+<div className="w-full max-w-[1440px] mx-auto mt-[10px] relative">
   {/* Top Section */}
 
 
@@ -181,9 +181,20 @@ className="w-full h-full object-cover"
         <p className="text-gray-600 mb-6">
           Make a QR code menu for your restaurant, bar or cafeso customers can enjoy a contactless dining experience.
         </p>
-        <button className="px-8 py-2 rounded-full bg-white text-[#121212] border-2 border-black hover:bg-black hover:text-white transition-colors">
+        {/* <button className="px-8 py-2 rounded-full bg-white text-[#121212] border-2 border-black hover:bg-black hover:text-white transition-colors">
           Submit
-        </button>
+        </button> */}
+
+<div className='group relative cursor-pointer p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold'>
+        <span className='translate-x-1 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block'>
+          Submit
+        </span>
+        <div className='flex gap-2 text-white z-10 items-center absolute top-0 h-full w-full justify-center translate-x-12 opacity-0 group-hover:-translate-x-1 group-hover:opacity-100 transition-all duration-300'>
+          <span>Submit</span>
+          <ArrowRight />
+        </div>
+        <div className='absolute top-[40%] left-[20%] h-2 w-2 group-hover:h-full group-hover:w-full rounded-lg bg-black scale-[1] dark:group-hover:bg-[#82e600] group-hover:bg-[#000] group-hover:scale-[1.8] transition-all duration-300 group-hover:top-[0%] group-hover:left-[0%] '></div>
+      </div>
       </div>
 
 
@@ -204,7 +215,7 @@ className="w-full h-full object-cover"
 
 
 
- 
+{/*  
     <div className="absolute right-[35%] top-[90%]">
       <div className="w-[120px] h-[120px] rounded-full border-2 border-white  overflow-hidden shadow-lg">
         <Image
@@ -215,9 +226,9 @@ className="w-full h-full object-cover"
           className="object-cover w-full h-full"
         />
       </div>
-    </div>
+    </div> */}
 
-    <div className="absolute right-[35%] top-[26%]">
+    {/* <div className="absolute right-[35%] top-[26%]">
       <div className="w-[120px] h-[120px] rounded-full border-2 border-white  overflow-hidden shadow-lg">
         <Image
           src="https://images.unsplash.com/photo-1533749871411-5e21e14bcc7d?w=800&q=80"
@@ -227,9 +238,9 @@ className="w-full h-full object-cover"
           className="object-cover w-full h-full"
         />
       </div>
-    </div>
+    </div> */}
 
-    <div className="absolute right-[46%] bottom-[25%]">
+    {/* <div className="absolute right-[46%] bottom-[25%]">
       <div className="w-[90px] h-[90px] rounded-full border-2 border-white  overflow-hidden shadow-lg">
         <Image
           src="https://images.unsplash.com/photo-1533745848184-3db07256e163?w=800&q=80"
@@ -239,7 +250,7 @@ className="w-full h-full object-cover"
           className="object-cover w-full h-full"
         />
       </div>
-    </div>
+    </div> */}
 
 
       {/* Floating circular images */}
