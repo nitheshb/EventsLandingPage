@@ -3,6 +3,8 @@
 import Link from "next/link";
 
 export default function FooterLinks() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="flex space-x-6">
       <Link 
@@ -17,7 +19,7 @@ export default function FooterLinks() {
       >
         Terms
       </Link>
-      <span className="text-sm text-gray-400">© 2024</span>
+      <span className="text-sm text-gray-400">&copy; {currentYear}</span>
     </div>
   );
 }

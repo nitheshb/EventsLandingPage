@@ -31,7 +31,7 @@ const Navbar = async (props: Props) => {
 
         <div className="flex items-center">
           <Zap className="h-8 w-8 text-[#82e600]" />
-          <span className="ml-2 text-xl font-semibold text-gray-900">foodyman</span>
+          <span className="ml-2 text-xl font-semibold text-gray-900">EventKit</span>
         </div>
 
 

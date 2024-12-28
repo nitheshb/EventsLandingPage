@@ -16,12 +16,12 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Zap className="h-8 w-8 text-[#82e600]" />
-                <span className="ml-2 text-xl font-semibold">foodyman</span>
+                <span className="ml-2 text-xl font-semibold">EventKit</span>
               </div>
               <div className="text-gray-400 text-sm">
-                <p>4517 Washington Ave. Manchester,</p>
-                <p>Kentucky 39495 USA</p>
-                <p>+1-202-555-0151, (555) 000-1212</p>
+                <p>3rd Floor, No 758 & 759, 19th Main Rd,  near <br /> Sai Baba Temple, 2nd Sector,  HSR Layout,</p>
+                <p>Bengaluru, Karnataka 560102</p>
+                <p>+91 8144 777 111</p>
               </div>
             </div>
 
@@ -31,7 +31,7 @@ export default function Footer() {
                 href="#" 
                 className="px-4 py-2 border border-white/20 rounded-full text-sm hover:bg-white/10 transition-colors"
               >
-                About Foodyman
+                About EventKit
               </Link>
               <Link 
                 href="#" 

@@ -1,29 +1,37 @@
 "use client";
 
 import FAQItem from "./FAQItem";
-
 const faqData = [
   {
-    question: "Can I group multiple menus under one QR Code?",
-    answer: "Yes, you can group multiple menus under a single QR code. This allows you to organize different meal times, special menus, or seasonal offerings efficiently."
+    question: "Is there any fee for registration to EventKit?",
+    answer: "Eventkit offers a free plan with basic features. We also have paid plans available with enhanced features, such as priority stall selection and real-time analytics."
   },
   {
-    question: "Does Instalacarte work with POS systems?",
-    answer: "Yes, our system integrates seamlessly with most popular POS systems to ensure smooth operation of your restaurant."
+    question: "How secure is my information on EventKit?",
+    answer: "We take the security of your data very seriously. Eventkit utilizes industry-standard security measures to protect your information, such as encryption and secure data storage."
+  },
+  // {
+  //   question: "What browsers are compatible with EventKit?",
+  //   answer: "Eventkit is compatible with most modern web browsers, including Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge."
+  // },
+  {
+    question: "Can I customize my stall design and layout?",
+    answer: "The level of customization allowed may vary depending on the specific expo and your chosen stall package. Please inquire with the expo organizers or your Eventkit representative for details."
   },
   {
-    question: "Is it possible to use a QR menu as a website for a restaurant?",
-    answer: "Yes, the QR menu can serve as a digital menu website for your restaurant, accessible both through QR scanning and direct URL."
+    question: "How can I promote my presence at the expo?",
+    answer: "You can promote your presence at the expo through various channels, such as social media, email marketing, and onsite signage."
   },
   {
-    question: "Why it doesn't work?",
-    answer: "If you're experiencing issues, please check your internet connection, QR code visibility, and ensure your device's camera is enabled for QR scanning."
+    question: "How can I track stall bookings and manage attendee data?",
+    answer: "Eventkit provides features for tracking stall bookings and managing attendee data, such as real-time reports and analytics dashboards."
   },
   {
-    question: "How do I generate a QR code for the menu?",
-    answer: "Simply upload your menu through our platform, customize the design, and we'll automatically generate a unique QR code for your restaurant."
+    question: "What is the difference between a standard stall and a premium stall?",
+    answer: "Premium stalls typically offer more space, better locations, and additional amenities compared to standard stalls."
   }
 ];
+
 
 
 export default function FAQ() {

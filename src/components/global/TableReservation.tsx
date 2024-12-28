@@ -16,12 +16,12 @@ export default function TableReservation() {
     <div>
 
 <div className="w-full max-w-[1440px] mx-auto py-4 rounded-[20px] ">
-    <div className="grid md:grid-cols-2 gap-4 items-start">
-<div className="relative h-[480px] w-full overflow-hidden">
+    <div className="grid grid-cols-2 gap-4 items-start">
+<div className="relative h-[490px] w-full overflow-hidden">
   <Image
     src={reservation} 
     alt="Reservation" 
-    className="absolute inset-0 object-cover w-full h-full  rounded-[20px] filter brightness-95"
+    className="absolute inset-0  object-cover w-full h-full  rounded-[20px] filter brightness-95"
     layout="fill" 
     objectFit="cover" 
   />
@@ -33,20 +33,19 @@ export default function TableReservation() {
 
  
 
-          <div className="bg-[#83ea00]  p-8 text-[#171717] relative   rounded-[20px] py-[50px] px-[50px] pb-[57px]  mb-4">
+          <div className="bg-[#83ea00] p-4 text-[#171717] relative   rounded-[20px] py-[50px] px-[50px]   mb-4">
   <p className="text-2xl mb-2">Advantages</p>
-  <h2 className="text-[56px] font-bold leading-tight mb-4">
-    Online<br />
-    table<br />
+  <h2 className="text-[56px] font-bold leading-tight ">
+    Online <br /> Stalls
     reservation
   </h2>
   
-  <div className="absolute top-4 right-4 w-12 h-12 rounded-full border-2 border-black flex items-center justify-center">
+  <div className="absolute top-[15%] right-20 w-20 h-20 rounded-full border-2 border-white flex items-center justify-center">
     <svg 
-      className="w-6 h-6" 
+      className="w-12 h-12" 
       fill="none" 
       viewBox="0 0 24 24" 
-      stroke="currentColor"
+      stroke="#fff"
     >
       <path 
         strokeLinecap="round" 
@@ -71,7 +70,7 @@ export default function TableReservation() {
               />
               <div className="relative z-10 p-8">
                 <h3 className="text-3xl font-bold mb-4 text-[#171717]">
-                  Find your table for any occasion
+                  Find your Stalls for any occasion
                 </h3>
                 {/* <button className="mt-4 px-8 py-3 border-2   border-black rounded-full hover:bg-black text-[#171717] transition-colors duration-300 text-lg">
                   Explore more
@@ -81,7 +80,7 @@ export default function TableReservation() {
         <span className='translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block'>
         Explore more
         </span>
-        <div className='flex gap-2 text-white bg-green-400 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none '>
+        <div className='flex gap-2 text-white bg-[#000] z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none '>
           <span> Explore more</span>
         </div>
       </div>

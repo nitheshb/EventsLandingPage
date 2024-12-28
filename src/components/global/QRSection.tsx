@@ -150,7 +150,7 @@ export default function QRSection() {
 
 
 <div className="w-full max-w-[1440px] mx-auto mt-[10px] relative">
-  {/* Top Section */}
+
 
 
 
@@ -173,13 +173,13 @@ className="w-full h-full object-cover"
 />
 </div>
     <div className="flex flex-col  md:flex-row justify-between items-start">
-      {/* Left content */}
+
       <div className="max-w-[500px]">
         <h1 className=" text-[#121212]  leading-[1.2] text-[76px] font-extrabold mb-3 ">
           Contact-less<br />QR Menu
         </h1>
         <p className="text-gray-600 mb-6">
-          Make a QR code menu for your restaurant, bar or cafeso customers can enjoy a contactless dining experience.
+          Eventkit allows attendees to browse stall options and book their favorite through a user friendly interface
         </p>
         {/* <button className="px-8 py-2 rounded-full bg-white text-[#121212] border-2 border-black hover:bg-black hover:text-white transition-colors">
           Submit
@@ -187,10 +187,10 @@ className="w-full h-full object-cover"
 
 <div className='group relative cursor-pointer p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold'>
         <span className='translate-x-1 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block'>
-          Submit
+          About
         </span>
         <div className='flex gap-2 text-white z-10 items-center absolute top-0 h-full w-full justify-center translate-x-12 opacity-0 group-hover:-translate-x-1 group-hover:opacity-100 transition-all duration-300'>
-          <span>Submit</span>
+          <span>About</span>
           <ArrowRight />
         </div>
         <div className='absolute top-[40%] left-[20%] h-2 w-2 group-hover:h-full group-hover:w-full rounded-lg bg-black scale-[1] dark:group-hover:bg-[#82e600] group-hover:bg-[#000] group-hover:scale-[1.8] transition-all duration-300 group-hover:top-[0%] group-hover:left-[0%] '></div>
@@ -277,8 +277,8 @@ className="w-full h-full object-cover"
     </div>
   </div>
 
-  {/* Overlapping QR Section */}
-  <div className="absolute left-[68%] bg-black transform -translate-x-[70%] -translate-y-[70%] z-10">
+
+  <div className="absolute left-[68%] bg-[#171717] transform -translate-x-[70%] -translate-y-[70%] z-10">
 
 <div className="relative bg-black h-[500px] w-full">
 
@@ -303,8 +303,7 @@ className="w-full h-full object-cover"
     
   </div>
 
-  {/* Bottom Section - How it works */}
-  <div className="bg-black gap-2 text-white rounded-[20px] p-8  mt-[10px]">
+  <div className="bg-[#171717] gap-2 text-white rounded-[20px] p-8  mt-[10px]">
     {/* <h2 className="text-3xl font-bold mb-8">How does it work?</h2> */}
 
     <HowItWorks />
