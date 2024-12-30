@@ -14,6 +14,7 @@ import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
 import { LampComponent } from '@/components/global/lamp'
 import Navbar from '@/components/global/navbar'
 
+
 import QRSection from '@/components/global/QRSection'
 import TableReservation from '@/components/global/TableReservation'
 import { Button } from '@/components/ui/button'
@@ -67,6 +68,9 @@ export default function Home() {
         <CardSpotlightDemo/>
 
         {/* <CardSpotlight/> */}
+
+
+     
 
 
 

@@ -7,6 +7,8 @@ import reservation from '../../../public/reservation.png'
 
 import reservationline from '../../../public/reservationine.png'
 
+import bg1 from '../../../public/bg1.webp'
+
 
 export default function TableReservation() {
   return (
@@ -19,7 +21,7 @@ export default function TableReservation() {
     <div className="grid grid-cols-2 gap-4 items-start">
 <div className="relative h-[490px] w-full overflow-hidden">
   <Image
-    src={reservation} 
+    src={bg1} 
     alt="Reservation" 
     className="absolute inset-0  object-cover w-full h-full  rounded-[20px] filter brightness-95"
     layout="fill" 

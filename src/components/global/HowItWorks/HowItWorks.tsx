@@ -3,22 +3,26 @@
 import { HoverEffect } from "../HoverEffect";
 import FeatureCard from "./FeatureCard";
 
+import himg01 from '../../../../public/himg01.jpg'
+import himg02 from '../../../../public/himg02.jpeg'
+import himg03 from '../../../../public/himg03.jpeg'
+
 export default function HowItWorks() {
   const features = [
     {
-      title: "You book stalls",
-      description: "What should be placed in the institution?",
-      imageSrc: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+      title: "Stall booking",
+      description: "Easy booking process,processed on payment ",
+      imageSrc: himg01,
     },
     {
-      title: "Easy booking process",
-      description: "Or attaches the phone to an NFC chip",
-      imageSrc: "https://images.unsplash.com/photo-1598291286794-d417e2685f85?w=800&q=80",
+      title: "Visitor Registration",
+      description: "Secured and hustle free online & offline registrations.",
+      imageSrc: himg02,
     },
     {
-      title: "Browse expo options",
-      description: "Does not require installation",
-      imageSrc: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=800&q=80",
+      title: "Analytics & Dashboards",
+      description: "Interactive live dashboards.",
+      imageSrc: himg03,
     },
   ];
 
@@ -68,7 +72,8 @@ export default function HowItWorks() {
 <div className="flex bg-[#171717] flex-col  justify-between px-4 py-6">
   <div>
     <h3 className="text-[#82e600] text-2xl text font-helvetica text-[50px] font-bold leading-[110%] mb-10">
-      Easily guided, the customer <br /> selects suitable dishes and <br /> makes an order.
+      {/* Easily guided, the customer <br /> selects suitable dishes and <br /> makes an order. */}
+      With simple guidance, the customer <br /> selects their ideal stall and secures  <br />  the booking effortlessly
     </h3>
   </div>
 
@@ -77,7 +82,8 @@ export default function HowItWorks() {
       See All
     </button>
     <p className="text-white text-[32px] font-medium leading-[110%] text-right">
-      Everything your customers <br /> need in one service
+      {/* Everything your customers <br /> need in one service */}
+      Everything your customers  <br /> require, all in one place
     </p>
   </div>
 </div>
