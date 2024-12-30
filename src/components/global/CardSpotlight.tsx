@@ -9,12 +9,14 @@ import { CanvasRevealEffect } from "./CanvasRevealEffect";
 export const CardSpotlight = ({
   children,
   radius = 350,
+  borderRadius = "rounded-md",
   color = "#262626",
   className,
   ...props
 }: {
   radius?: number;
   color?: string;
+  borderRadius?: string;
   children: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>) => {
   const mouseX = useMotionValue(0);
@@ -36,7 +38,7 @@ export const CardSpotlight = ({
   return (
     <div
       className={cn(
-        "group/spotlight  rounded-[20px] relative dark:border-neutral-800",
+        "group/spotlight p-4  relative border border-neutral-800 bg-black rounded-[20px] dark:border-neutral-800",
         className
       )}
       onMouseMove={handleMouseMove}
