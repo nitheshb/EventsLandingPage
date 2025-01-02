@@ -5,8 +5,6 @@ import { CardSpotlight } from "./CardSpotlight";
 
 export function CardSpotlightDemo() {
   return (
-
-
 <div className="min-h-screen rounded-[20px] bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mb-4">
   <div className="max-w-7xl mx-auto">
     <div className="mb-12">
@@ -21,93 +19,68 @@ export function CardSpotlightDemo() {
       </div>
     </div>
 
-
     <div className="flex justify-center items-center gap-4">
-      <CardSpotlight
-        className="h-[450px] w-96 flex flex-col justify-between overflow-hidden relative"
-        radius={350}
-        borderRadius="rounded-3xl"
-      >
-        <div>
-          <p className="text-xl font-bold relative z-20 mt-2 text-white">
-            Authentication steps
-          </p>
-          <div className="text-neutral-200 mt-4 relative z-20">
-            Follow these steps to secure your account:
-            <ul className="list-none mt-2">
-              <Step title="Enter your email address" />
-              <Step title="Create a strong password" />
-              <Step title="Set up two-factor authentication" />
-              <Step title="Verify your identity" />
-            </ul>
+      {[
+        {
+          title: "Authentication steps",
+          steps: [
+            "Enter your email address",
+            "Create a strong password",
+            "Set up two-factor authentication",
+            "Verify your identity",
+          ],
+          description:
+            "Ensuring your account is properly secured helps protect your personal information and data.",
+        },
+        {
+          title: "Password Tips",
+          steps: [
+            "Use at least 12 characters",
+            "Include letters, numbers, and symbols",
+            "Avoid common words or phrases",
+            "Don’t reuse passwords across sites",
+          ],
+          description:
+            "A strong password helps safeguard your account from unauthorized access.",
+        },
+        {
+          title: "Account Recovery Steps",
+          steps: [
+            "Go to the account recovery page",
+            "Enter your registered email",
+            "Follow the recovery link sent to your email",
+            "Reset your password",
+          ],
+          description:
+            "Recover your account quickly and securely if you ever lose access.",
+        },
+      ].map(({ title, steps, description }) => (
+        <CardSpotlight
+          key={title}
+          className="h-[450px] w-96 flex flex-col justify-between overflow-hidden relative p-8"
+          radius={350}
+          borderRadius="rounded-3xl"
+        >
+          <div>
+            <p className="text-xl font-bold relative z-20 mt-2 text-white">{title}</p>
+            <div className="text-neutral-200 mt-4 relative z-20">
+              <ul className="list-none mt-2">
+                {steps.map((step) => (
+                  <Step key={step} title={step} />
+                ))}
+              </ul>
+            </div>
+            <p className="text-neutral-300 mt-4 relative z-20 text-sm">{description}</p>
           </div>
-          <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-            Ensuring your account is properly secured helps protect your personal
-            information and data.
-          </p>
-        </div>
-        <button className="mt-6 bg-blue-500 text-white py-2 px-4 rounded relative z-20 hover:bg-blue-600 self-center">
-          Get Now
-        </button>
-      </CardSpotlight>
-
-      <CardSpotlight
-        className="h-[450px] w-96 flex flex-col justify-between overflow-hidden relative"
-        radius={350}
-        borderRadius="rounded-3xl"
-      >
-        <div>
-          <p className="text-xl font-bold relative z-20 mt-2 text-white">
-            Password Tips
-          </p>
-          <div className="text-neutral-200 mt-4 relative z-20">
-            Best practices for creating secure passwords:
-            <ul className="list-none mt-2">
-              <Step title="Use at least 12 characters" />
-              <Step title="Include letters, numbers, and symbols" />
-              <Step title="Avoid common words or phrases" />
-              <Step title="Don’t reuse passwords across sites" />
-            </ul>
-          </div>
-          <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-            A strong password helps safeguard your account from unauthorized
-            access.
-          </p>
-        </div>
-        <button className="mt-6 bg-blue-500 text-white py-2 px-4 rounded relative z-20 hover:bg-blue-600 self-center">
-          Get Now
-        </button>
-      </CardSpotlight>
-
-      <CardSpotlight
-        className="h-[450px] w-96 flex flex-col justify-between overflow-hidden relative"
-        radius={350}
-        borderRadius="rounded-3xl"
-      >
-        <div>
-          <p className="text-xl font-bold relative z-20 mt-2 text-white">
-            Account Recovery Steps
-          </p>
-          <div className="text-neutral-200 mt-4 relative z-20">
-            Steps to recover access to your account:
-            <ul className="list-none mt-2">
-              <Step title="Go to the account recovery page" />
-              <Step title="Enter your registered email" />
-              <Step title="Follow the recovery link sent to your email" />
-              <Step title="Reset your password" />
-            </ul>
-          </div>
-          <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-            Recover your account quickly and securely if you ever lose access.
-          </p>
-        </div>
-        <button className="mt-6 bg-blue-500 text-white py-2 px-4 rounded relative z-20 hover:bg-blue-600 self-center">
-          Get Now
-        </button>
-      </CardSpotlight>
+          <button className="mt-6 bg-blue-500 text-white py-2 px-4 rounded  relative z-20 hover:bg-blue-600 self-center">
+            Get Now
+          </button>
+        </CardSpotlight>
+      ))}
     </div>
   </div>
 </div>
+
 
 
 

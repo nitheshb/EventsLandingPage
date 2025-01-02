@@ -168,12 +168,22 @@ export default function QRSection() {
         <br />
         QR Menu
       </h1>
-      <p className="text-gray-600 text-[20px] leading-[24px] tracking-[-4%] font-medium mb-[68px] text-[hsla(0,0%,9%,.5)]">
+
+      <div>
+
+</div>
+
+
+
+
+      <p className="text-gray-600 text-[20px] leading-[24px] tracking-[-4%] font-medium mb-[65px] text-[hsla(0,0%,9%,.5)]">
         Eventkit allows attendees to browse stall options and book their
         favorite through a user-friendly interface.
       </p>
 
-      <div className="group relative cursor-pointer p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
+
+
+      {/* <div className="group relative cursor-pointer p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
         <span className="translate-x-1 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block">
           About
         </span>
@@ -182,7 +192,18 @@ export default function QRSection() {
           <ArrowRight />
         </div>
         <div className="absolute top-[40%] left-[20%] h-2 w-2 group-hover:h-full group-hover:w-full rounded-lg bg-black dark:group-hover:bg-[#82e600] group-hover:bg-[#000] group-hover:scale-[1.8] transition-all duration-300 group-hover:top-0 group-hover:left-0"></div>
-      </div>
+      </div> */}
+
+
+<button
+    type="submit"
+    className="flex items-center justify-center rounded-[8px] box-border font-medium transition duration-500 ease-in-out transform hover:scale-105 px-4 py-2 text-xs 2xl:text-base 2xl:leading-4 bg-btn-pattern hover:bg-primary-700 text-black  bg-[#82e600] shadow-btn"
+  >
+
+    About 
+  </button>
+
+      
     </div>
   </div>
 </div>

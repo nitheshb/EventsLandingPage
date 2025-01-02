@@ -20,17 +20,18 @@ export const HoverEffect = ({ items, className }: { items: { title: string; desc
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 0.15 } }}
-                exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
-              />
-            )}
-          </AnimatePresence>
+
+<AnimatePresence>
+  {hoveredIndex === idx && (
+    <motion.span
+      className="absolute inset-0 h-full w-full bg-neutral-50 dark:bg-slate-700/[0.3] block rounded-3xl"
+      layoutId="hoverBackground"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.6, transition: { duration: 0.15 } }}
+      exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
+    />
+  )}
+</AnimatePresence>
 
           <Card>
             <div className="flex flex-col justify-between h-full">
