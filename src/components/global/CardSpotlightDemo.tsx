@@ -1,97 +1,82 @@
 import { CardSpotlight } from "./CardSpotlight";
 
-
-
-
 export function CardSpotlightDemo() {
   return (
-<div className="min-h-screen rounded-[20px] bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mb-4">
-  <div className="max-w-7xl mx-auto">
-    <div className="mb-12">
-      <div className="flex items-center justify-between">
-        <div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-2">Choose your plan</h2>
-          <p className="text-lg text-gray-600">
-            Start free and fall in love with our pro features
-          </p>
+    <div className="min-h-screen rounded-[20px] bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mb-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-12">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+            <div className="mb-4 lg:mb-0">
+              <h2 className="text-4xl font-bold text-gray-900 mb-2">Choose your plan</h2>
+              <p className="text-lg text-gray-600">
+                Start free and fall in love with our pro features
+              </p>
+            </div>
+            <button className="text-gray-600 hover:text-gray-900">Show more</button>
+          </div>
         </div>
-        <button className="text-gray-600 hover:text-gray-900">Show more</button>
+
+        <div className="flex flex-wrap justify-center items-center gap-4">
+          {[
+            {
+              title: "Authentication steps",
+              steps: [
+                "Enter your email address",
+                "Create a strong password",
+                "Set up two-factor authentication",
+                "Verify your identity",
+              ],
+              description:
+                "Ensuring your account is properly secured helps protect your personal information and data.",
+            },
+            {
+              title: "Password Tips",
+              steps: [
+                "Use at least 12 characters",
+                "Include letters, numbers, and symbols",
+                "Avoid common words or phrases",
+                "Don’t reuse passwords across sites",
+              ],
+              description:
+                "A strong password helps safeguard your account from unauthorized access.",
+            },
+            {
+              title: "Account Recovery Steps",
+              steps: [
+                "Go to the account recovery page",
+                "Enter your registered email",
+                "Follow the recovery link sent to your email",
+                "Reset your password",
+              ],
+              description:
+                "Recover your account quickly and securely if you ever lose access.",
+            },
+          ].map(({ title, steps, description }) => (
+            <CardSpotlight
+              key={title}
+              className="h-[450px] w-full sm:w-[400px] lg:w-96 flex flex-col justify-between overflow-hidden relative p-8"
+              radius={350}
+              borderRadius="rounded-3xl"
+            >
+              <div>
+                <p className="text-xl font-bold relative z-20 mt-2 text-white">{title}</p>
+                <div className="text-neutral-200 mt-4 relative z-20">
+                  <ul className="list-none mt-2">
+                    {steps.map((step) => (
+                      <Step key={step} title={step} />
+                    ))}
+                  </ul>
+                </div>
+                <p className="text-neutral-300 mt-4 relative z-20 text-sm">{description}</p>
+              </div>
+              <button className="mt-6 bg-blue-500 text-white py-2 px-4 rounded relative z-20 hover:bg-blue-600 self-center">
+                Get Now
+              </button>
+            </CardSpotlight>
+          ))}
+        </div>
       </div>
     </div>
-
-    <div className="flex justify-center items-center gap-4">
-      {[
-        {
-          title: "Authentication steps",
-          steps: [
-            "Enter your email address",
-            "Create a strong password",
-            "Set up two-factor authentication",
-            "Verify your identity",
-          ],
-          description:
-            "Ensuring your account is properly secured helps protect your personal information and data.",
-        },
-        {
-          title: "Password Tips",
-          steps: [
-            "Use at least 12 characters",
-            "Include letters, numbers, and symbols",
-            "Avoid common words or phrases",
-            "Don’t reuse passwords across sites",
-          ],
-          description:
-            "A strong password helps safeguard your account from unauthorized access.",
-        },
-        {
-          title: "Account Recovery Steps",
-          steps: [
-            "Go to the account recovery page",
-            "Enter your registered email",
-            "Follow the recovery link sent to your email",
-            "Reset your password",
-          ],
-          description:
-            "Recover your account quickly and securely if you ever lose access.",
-        },
-      ].map(({ title, steps, description }) => (
-        <CardSpotlight
-          key={title}
-          className="h-[450px] w-96 flex flex-col justify-between overflow-hidden relative p-8"
-          radius={350}
-          borderRadius="rounded-3xl"
-        >
-          <div>
-            <p className="text-xl font-bold relative z-20 mt-2 text-white">{title}</p>
-            <div className="text-neutral-200 mt-4 relative z-20">
-              <ul className="list-none mt-2">
-                {steps.map((step) => (
-                  <Step key={step} title={step} />
-                ))}
-              </ul>
-            </div>
-            <p className="text-neutral-300 mt-4 relative z-20 text-sm">{description}</p>
-          </div>
-          <button className="mt-6 bg-blue-500 text-white py-2 px-4 rounded  relative z-20 hover:bg-blue-600 self-center">
-            Get Now
-          </button>
-        </CardSpotlight>
-      ))}
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
   );
 }
 
