@@ -5,6 +5,7 @@ import Image from "next/image";
 import reservation from '../../../public/reservation.png';
 import reservationline from '../../../public/reservationine.png';
 import bg1 from '../../../public/bg1.webp';
+import bg2 from '../../../public/bg2.jpeg';
 
 export default function TableReservation() {
   return (
@@ -29,7 +30,7 @@ export default function TableReservation() {
       
           <div className="bg-[#83ea00] p-4 text-[#171717] relative rounded-[20px] py-[50px] px-[50px] mb-4">
             <p className="text-2xl mb-2">Advantages</p>
-            <h2 className="text-[4rem] sm:text-[5rem] md:text-[36px] lg:text-[56px] font-bold leading-tight">
+            <h2 className="text-[2rem] sm:text-[3rem] md:text-[26px] lg:text-[46px] font-bold leading-tight">
               Online <br /> Stalls Reservation
             </h2>
 

@@ -14,6 +14,8 @@ import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
 import { LampComponent } from '@/components/global/lamp'
 import Navbar from '@/components/global/navbar'
 
+import '../app/globals.css'
+
 
 import QRSection from '@/components/global/QRSection'
 import TableReservation from '@/components/global/TableReservation'
@@ -27,12 +29,12 @@ import Image from 'next/image'
 
 
 export default function Home() {
-  //WIP: remove fault IMAge for home page
+
   return (
 
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white overflow-hidden">
 
-      <div className='relative w-full max-w-[1440px] px-[50px] pt-[10px] mx-auto'>
+      <div className='relative w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 pt-5 mx-auto'>
       <Navbar />
       {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16"> */}
       <div className="max-w-[1440px] mx-auto">

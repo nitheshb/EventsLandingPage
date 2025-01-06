@@ -140,7 +140,7 @@ import welcomeherovector from '../../../public/welcomeherovector.png'
 
 export default function QRSection() {
   return (
-    <div className="w-full max-w-[1440px] mx-auto mt-10 relative">
+    <div className="w-full max-w-[1440px] mx-auto mt-5 relative">
 
 
       <div className="relative bg-gray-50 rounded-3xl p-8 pb-32 group">
@@ -156,10 +156,10 @@ export default function QRSection() {
 
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="max-w-full md:max-w-[550px] z-10">
-            <h1 className="text-[#121212] leading-[1.2] text-[48px] sm:text-[56px] lg:text-[76px] font-extrabold mb-3">
-              Contact-less
+            <h1 className="text-[#121212] leading-[1.2] text-[45px] sm:text-[46px] lg:text-[66px] font-extrabold mb-3">
+              Own the Space,
               <br />
-              QR Menu
+              Rule the Expo.
             </h1>
 
             <p className="text-gray-600 text-[18px] sm:text-[20px] md:text-[24px] leading-[24px] tracking-[-4%] font-medium mb-[40px] sm:mb-[65px] text-[hsla(0,0%,9%,.5)]">

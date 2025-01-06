@@ -106,8 +106,7 @@ export default function Pricing() {
               <h3 className="text-2xl font-semibold mb-2">title1</h3>
               <p className="text-lg mb-6">1 month</p>
               <div className="text-4xl font-bold mb-8">
-                <span className="text-2xl">Rp</span>100.00
-              </div>
+                <span className="text-2xl">Rp</span>10              </div>
               <ul className="space-y-4 mb-8">
                 <li>30 items in the menu</li>
                 <li>Access to the menu creation tool</li>

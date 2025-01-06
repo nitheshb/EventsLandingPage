@@ -18,38 +18,74 @@ export function CardSpotlightDemo() {
 
         <div className="flex flex-wrap justify-center items-center gap-4">
           {[
+            // {
+            //   title: "Authentication steps",
+            //   steps: [
+            //     "Enter your email address",
+            //     "Create a strong password",
+            //     "Set up two-factor authentication",
+            //     "Verify your identity",
+            //   ],
+            //   description:
+            //     "Ensuring your account is properly secured helps protect your personal information and data.",
+            // },
+            // {
+            //   title: "Password Tips",
+            //   steps: [
+            //     "Use at least 12 characters",
+            //     "Include letters, numbers, and symbols",
+            //     "Avoid common words or phrases",
+            //     "Don’t reuse passwords across sites",
+            //   ],
+            //   description:
+            //     "A strong password helps safeguard your account from unauthorized access.",
+            // },
+            // {
+            //   title: "Account Recovery Steps",
+            //   steps: [
+            //     "Go to the account recovery page",
+            //     "Enter your registered email",
+            //     "Follow the recovery link sent to your email",
+            //     "Reset your password",
+            //   ],
+            //   description:
+            //     "Recover your account quickly and securely if you ever lose access.",
+            // },
+
             {
-              title: "Authentication steps",
+              title: "Standard Package",
               steps: [
-                "Enter your email address",
-                "Create a strong password",
-                "Set up two-factor authentication",
-                "Verify your identity",
+                "1 Event Pass",
+                "Access to Main Event Area",
+                "Networking Opportunities",
+                "Event Materials",
               ],
-              description:
-                "Ensuring your account is properly secured helps protect your personal information and data.",
+              description: "Perfect for small gatherings and one-day events, with essential access and networking opportunities.",
+              price: "$199",
             },
             {
-              title: "Password Tips",
+              title: "Premium Package",
               steps: [
-                "Use at least 12 characters",
-                "Include letters, numbers, and symbols",
-                "Avoid common words or phrases",
-                "Don’t reuse passwords across sites",
+                "Up to 3 Event Passes",
+                "VIP Access to All Areas",
+                "Exclusive Networking Sessions",
+                "Custom Event Materials",
+                "Priority Seating",
               ],
-              description:
-                "A strong password helps safeguard your account from unauthorized access.",
+              description: "For those who want a premium experience, with VIP access and enhanced networking opportunities.",
+              price: "$499",
             },
             {
-              title: "Account Recovery Steps",
+              title: "VIP Package",
               steps: [
-                "Go to the account recovery page",
-                "Enter your registered email",
-                "Follow the recovery link sent to your email",
-                "Reset your password",
+                "Up to 5 Event Passes",
+                "Full VIP Access with All-Access Pass",
+                "Exclusive VIP Lounge Access",
+                "Personalized Event Support",
+                "Priority Registration",
               ],
-              description:
-                "Recover your account quickly and securely if you ever lose access.",
+              description: "The ultimate package for VIP attendees, offering full access and exclusive perks.",
+              price: "$999",
             },
           ].map(({ title, steps, description }) => (
             <CardSpotlight

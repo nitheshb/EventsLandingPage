@@ -128,8 +128,8 @@ export const HoverEffect = ({ items, className }: { items: { title: string; desc
                   <CardTitle className="text-[#82e600] text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">{item.title}</CardTitle>
                 </h3>
 
-                <div className="bg-[#3e3e3e] rounded-full p-6 inline-flex items-center justify-center group group-hover:text-white group-hover:bg-[#82e600]">
-                  <ArrowUpRight className="text-[#fff]" />
+                     <div className="bg-[#3e3e3e] rounded-full p-4 sm:p-6 inline-flex items-center justify-center group group-hover:text-white group-hover:bg-[#82e600]">
+                  <ArrowUpRight className="text-[#fff] text-sm sm:text-lg md:text-xl" />
                 </div>
               </div>
 
